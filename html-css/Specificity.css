@@ -1,0 +1,19 @@
+#id1 + div {
+  /* Score - 101 */
+  color: blue;
+}
+
+#id2 {
+  /* Score - 100 */
+  color: red;
+}
+
+#id3 a {
+  /* Score - 101 */
+  color: red;
+}
+
+.class1 a {
+  /* Score - 011 */
+  color: green;
+}
