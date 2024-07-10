@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+    <input type="number" name="Age" id="age">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	
+	<button onclick="showName()">NAME</button>
+    <button onclick="showAge()">AGE</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	
+	<script type="text/javascript">
+		function showName() {
+			 var name=document.querySelector("#name").value;
+             console.log(name);
+        }
+        function showAge() {
+			 var age=document.querySelector("#age").value;
+             console.log(age);
+        }
+
+		function showGender() {
+			// Show the selected gender inside console
+            var b=document.querySelector("#gender").value;
+            console.log(b);
+		}
+
+		function showEmail() {
+			// Show the filled email inside console
+            var c=document.querySelector("#email").value;
+            console.log(c);
+		}
+
+		function showMobile() {
+			// Show the filled mobile inside console
+            var d=document.querySelector("#mobile").value;
+            console.log(d);
+		}
+	</script>
+</body>
+</html>
