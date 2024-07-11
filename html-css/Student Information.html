@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        h2{
+            box-shadow: inset ;
+            color: teal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #btn{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Student Info Form</u></h2> 
+    <form>
+        <input id="name" type="text" placeholder="Enter Your Name" /><br />
+        <input id="roll" type="number" placeholder="Enter Your Roll No." /><br />
+        <input id="std" type="text" placeholder="Enter Your class." /><br />
+        <input id="btn" type="submit" value="submit"/>
+    </form>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+document.querySelector("form").addEventListener("submit",addStudent);
+
+var studentData=[];
+function addStudent(){
+    event.preventDefault();
+    var obj={
+        name:document.querySelector("#name").value,
+        roll:document.querySelector("#roll").value,
+        std:document.querySelector("#std").value
+    };
+    
+    studentData.push(obj);
+    console.log(studentData);
+    displayStudents(studentData)
+    function displayStudents(studentData){
+        document.querySelector("#container").innerText="";
+       studentData.forEach(function(elem){
+        var box=document.createElement("div");
+         var name=document.createElement("p");
+         name.innerText=elem.name;
+         var roll=document.createElement("p");
+         roll.innerText=elem.roll;
+         var std=document.createElement("p");
+         std.innerText=elem.std;
+         box.append(name,roll,std);
+         document.querySelector("#container").append(box);
+
+       }); 
+    }
+}
+
+</script>
+</html>
