@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 5px;
+            background-color: whitesmoke;
+        }
+        .A{
+            background-color:blue;
+            color: white;
+            border-radius: 4px;
+        }
+        .B{
+            background-color:gray;
+            color: white;
+            border-radius: 4px;
+        }
+        .C{
+            background-color:green;
+            color: white;
+            border-radius: 4px;
+        }
+        .D{
+            background-color:red;
+            color: white;
+            border-radius: 4px;
+        }
+        .E{
+            background-color:yellow;
+            color: black;
+            border-radius: 4px;
+        }
+        .F{
+            background-color:cyan;
+            color: white;
+            border-radius: 4px;
+        }
+        .G{
+            background-color:white;
+            color: black;
+            border-radius: 4px;
+        }
+        .H{
+            background-color:black;
+            color: white;
+            border-radius: 4px;
+        }
+        .I{
+            background-color:white;
+            color: blue;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="A">Primary</div>
+        <div class="B">Secondary</div>
+        <div class="C">Success</div>
+        <div class="D">Danger</div>
+        <div class="E">Warning</div>
+        <div class="F">Info</div>
+        <div class="G">Light</div>
+        <div class="H">Dark</div>
+        <div class="I">Link</div>
+    </div>
+</body>
+</html>
